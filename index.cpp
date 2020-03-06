@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 /* 
  * File:   index.cpp
@@ -14,6 +10,7 @@
 #include <iostream>
 #include <sqlite3.h> //be specific when including headers that have been linked in the IDE
 #include "bootstrap.cpp" //include bootstrap to all other files
+#include "order.cpp"
 
 using namespace std;
 
@@ -27,11 +24,16 @@ int main(int argc, char* argv[]) {
    
     
     cout << "Welcome to Tea POS software v1.0. \n";
-    cout << "Return available bubbles \n";
+    cout << "Testing for custom order. \n";
+    
+    //place an order
+    Order order;
+    order.drink(1, 1, 50, 2, 3, 1, 3);
+    
     
      //open new database connection
-    Database conn;
-    conn.launch();
+    //Database conn;
+    //conn.launch();
     
     
 

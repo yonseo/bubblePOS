@@ -1,0 +1,38 @@
+return all available options
+
+
+tea (black, green, oolong, earl grey)
+cup size (small, medium , large)
+sugar level (0%, 30%, 50%, 70%, 100%), (stevia, splenda)(honey) //3 options in this category //if using honey use percentage as well. Why make it difficult?
+ice level (little, half, full)
+milk type (non-dairy powder, soy, almond, oat)
+bubbles (aloe, pearls, white pearls, coconut jelly, lychee jelly) //count (x2) what type? how many servings/scoops of this? //2 options in this category
+count (x5) how many of this drink?
+
+return as array []
+
+
+//Array for each bubble
+type[pearl, count]
+type[coconut jelly, count]
+
+bubbles[type[], count] <-
+sugar[type, %] 
+drink_price = total price excluding tax for one drink
+
+
+//ARRAY
+order_number[#] //reset to zero at closing
+customer_order[tea, cup_size, sugar[], ice, milk, bubbles[], drink_price, count]
+
+
+Why store customers order after receipt is returned?
+Profit for the day.
+Stock of products. How much of x product is running low/out of stock?
+Cost to stay in business
+Employee hourly wage excluding tips.
+
+
+
+
+
